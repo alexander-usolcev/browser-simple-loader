@@ -1,6 +1,6 @@
 {
   "name": "browser-simple-loader",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Alexander Usolcev <alexander.usolcev@gmail.com>",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   },
-  "description": "Simple svg loader in browser",
+  "description": "Simple html5 (based on svg) loader in browser",
   "main": "source/app.js",
   "directories": {
     "test": "test"
@@ -30,7 +30,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --open --history-api-fallback",
     "prod": "npm --no-git-tag-version version patch && npm run build",
-    "build": "babel source/loader.js --out-file build/loader.js && webpack --profile --display-modules --display-reasons"
+    "build": "babel source/browser-simple-loader.js --out-file build/browser-simple-loader.js && webpack --profile --display-modules --display-reasons"
   },
   "homepage": "https://github.com/alexander-usolcev/browser-simple-loader.git#readme"
 }

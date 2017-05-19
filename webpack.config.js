@@ -11,7 +11,7 @@ module.exports = {
     context: path.join(__dirname, 'source'),
 
     entry: {
-        'loader': './loader.js',
+        // 'browser-simple-loader': './browser-simple-loader.js',
         'test': '../test/test.js'
     },
 

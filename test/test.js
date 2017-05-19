@@ -1,14 +1,14 @@
 'use strict';
 
-import Loader from '../source/loader';
+import Loader from '../source/browser-simple-loader';
 
 class Test {
     constructor() {
         let loader = new Loader({
-            width: 200,
-            height: 200,
+            size: 200
         });
-        console.log(123, loader.show());
+
+        loader.show();
     }
 }
 
