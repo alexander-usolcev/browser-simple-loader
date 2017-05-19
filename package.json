@@ -1,6 +1,6 @@
 {
   "name": "browser-simple-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Alexander Usolcev <alexander.usolcev@gmail.com>",
   "repository": {
     "type": "git",
@@ -32,5 +32,13 @@
     "prod": "npm --no-git-tag-version version patch && npm run build",
     "build": "babel source/browser-simple-loader.js --out-file build/browser-simple-loader.js && webpack --profile --display-modules --display-reasons"
   },
-  "homepage": "https://github.com/alexander-usolcev/browser-simple-loader.git#readme"
+  "homepage": "https://github.com/alexander-usolcev/browser-simple-loader.git#readme",
+  "bugs": {
+    "url": "https://github.com/alexander-usolcev/browser-simple-loader/issues"
+  },
+  "keywords": [
+    "html-loader",
+    "svg-loader",
+    "browser-loader"
+  ]
 }
