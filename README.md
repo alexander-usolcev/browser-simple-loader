@@ -92,7 +92,9 @@ default configuration is:
 ```
 
 Default templates is:
+
 templates.style
+
 ```css
 <style type="text/css">
     .browser-simple-loader {
