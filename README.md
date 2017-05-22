@@ -2,6 +2,8 @@
 
 **browser-simple-loader** - it's a simple html5 (based on svg) loader in browser.
 
+![Example](data/example.gif?raw=true)
+
 ## Install 
 ```
 npm install browser-simple-loader --save-dev
