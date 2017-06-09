@@ -12,7 +12,7 @@ module.exports = {
 
     entry: {
         // 'browser-simple-loader': './browser-simple-loader.js',
-        'test': '../test/test.js'
+        'test-browser': '../test/test-browser.js'
     },
 
     output: {

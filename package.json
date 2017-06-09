@@ -1,6 +1,6 @@
 {
   "name": "browser-simple-loader",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "author": "Alexander Usolcev <alexander.usolcev@gmail.com>",
   "repository": {
     "type": "git",
@@ -16,6 +16,8 @@
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-stage-2": "^6.13.0",
     "cross-env": "^3.1.4",
+    "jsdom": "^11.0.0",
+    "mocha": "^3.4.2",
     "smart-banner-webpack-plugin": "^3.0.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
@@ -27,7 +29,7 @@
   },
   "dependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./node_modules/mocha/bin/mocha --require test/test-helper.js test/test.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --open --history-api-fallback",
     "prod": "npm --no-git-tag-version version patch && npm run build",
     "build": "babel source/browser-simple-loader.js --out-file build/browser-simple-loader.js && webpack --profile --display-modules --display-reasons"

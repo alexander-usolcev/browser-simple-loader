@@ -6,7 +6,7 @@
 
 ## Install 
 ```
-npm install browser-simple-loader --save-dev
+npm install browser-simple-loader --save
 ```
 
 ## Use (recommended)
