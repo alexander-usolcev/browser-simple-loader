@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '8'
+- '7'
+deploy:
+  provider: npm
+  email: alexander.usolcev@gmail.com
+  skip_cleanup: true
+  api_key:
+    secure: kGY0s41CEGWH3tn6N5gW0iV6d46p+M4SaJ3f4rcT5R9aqIgacTmFvZLg+72Ik0p2cRE9+RxsVZIhcvITcV/Y8xl+eCn/vnILZWdx8Bjgz/ufzBdwerJHx9XQi50t/o9mk5SjREVpSTmEYY0OiC6URT/Xk+5MqmqgHrLJU2HaYdmeX2WWCKHhRR8m7QfLZc/YD76BVt/clSk4+sILapL0krENV9GcuHaWgU9JSzt1kl7rG8XuABMnsrGrYTAHdjyiF7mhJ7TuTlszyStWJT9Hr5JRJ+cF2KQxJAp10dSkNm/lJd6o+74Ltvk6SeWJbt3PiAwxtOQ19lQKHTfn8SjzEKHED2snyq+e4t0K61Z4lnLgAx3JNkCl6LxkFmqbL2D48aA9r6BwGcqkaiu+sFC872Fp6sjGH9xWOuo5k+fP5HRWfWDFYAiCWy+NozR7bBF20I+tlpkvgILWDZwrqmLREcoolPlENHLky+kq6lGl86ns+gYEER+IOHDwDsqNIbZb7u/tKDyrNgUmy9JN1a6Sm/ymNvkaYrTSO0CI1ofLOXChdx92En+XgpTzO23BeDa7LgyxPP2a+12T8POakkg1+AWPL1QjKYF1/ftFt1fTrI9ROJUUutVk3d8hQJ68h85PIhMZxvHbObob+lx+eOPMISkxqZmx3WywII/a0c9ltts=
+  on:
+    repo: alexander-usolcev/browser-simple-loader
+    branch: master
